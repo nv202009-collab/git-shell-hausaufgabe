@@ -28,3 +28,19 @@ case $auswahl in
     echo "Ungültige Auswahl."
     ;;
 esac
+case $auswahl in
+  1)
+    echo "Systeminformationen:"
+    uname -a
+    ;;
+  2)
+    echo "Speicherplatz:"
+    df -h
+    ;;
+  3)
+    echo "Programm wird beendet."
+    ;;
+  *)
+    echo "Ungültige Auswahl."
+    ;;
+esac
